@@ -152,7 +152,7 @@ export default class HomePage extends Component {
     }
 
     getHomeData() {
-        fetch("http://api.bestkeep.cn/index_v228").then((response)=>response.json())
+        fetch("http://api.test.bestkeep.cn/index_v228").then((response)=>response.json())
             .then((responseJson)=> {
                 let result = responseJson.data;
                 this.setState({
